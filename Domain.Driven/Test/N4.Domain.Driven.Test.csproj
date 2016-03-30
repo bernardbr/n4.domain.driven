@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\N4.Domain.Driven.csproj">
-      <Project>{0050EF78-5B60-4785-B857-35EC496F85E8}</Project>
+      <Project>{0050ef78-5b60-4785-b857-35ec496f85e8}</Project>
       <Name>N4.Domain.Driven</Name>
     </ProjectReference>
   </ItemGroup>
