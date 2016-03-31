@@ -1,0 +1,8 @@
+language: csharp 
+solution: N4.sln
+install:
+  - nuget restore N4.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release N4.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./Domain.Driven/Test/bin/Release/N4.Domain.Driven.Test.dll
