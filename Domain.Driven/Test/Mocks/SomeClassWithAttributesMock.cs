@@ -37,7 +37,7 @@ namespace N4.Domain.Driven.Test.Mocks
         /// Gets the id.
         /// </summary>
         [Key]
-        [Field("Some_Class_Table_Name_Id", DbType.Int32)]
+        [Field("Some_Class_Table_Name_Id")]
         public int Id { get; private set; }
     }
 }

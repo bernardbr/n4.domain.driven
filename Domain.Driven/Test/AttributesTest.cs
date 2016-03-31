@@ -51,12 +51,10 @@ namespace N4.Domain.Driven.Test
             var keyProperty = propertiesWithAttrs.First(p => p.GetCustomAttribute<KeyAttribute>() != null);
             Assert.IsNotNull(keyProperty);
             Assert.AreEqual("Some_Class_Table_Name_Id", keyProperty.GetCustomAttribute<FieldAttribute>(false).FieldName);
-            Assert.AreEqual(DbType.Int32, keyProperty.GetCustomAttribute<FieldAttribute>(false).FieldType);
 
             var anotherProperty = propertiesWithAttrs.First(p => p.GetCustomAttribute<KeyAttribute>() == null);
             Assert.IsNotNull(anotherProperty);
             Assert.AreEqual("Another_Value", anotherProperty.GetCustomAttribute<FieldAttribute>(false).FieldName);
-            Assert.AreEqual(DbType.String, anotherProperty.GetCustomAttribute<FieldAttribute>(false).FieldType);
 
             /**
              * TODO : Como alterar uma propriedade readonly

@@ -14,7 +14,7 @@ namespace N4.Domain.Driven.Model.Attrs
     /// <summary>
     /// The table attribute.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Class, Inherited = false)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface, Inherited = false)]
     public class TableAttribute : Attribute
     {
         /// <summary>
